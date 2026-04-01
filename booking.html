@@ -1,170 +1,101 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>预约体验 - 朝夕学堂</title>
-    <meta name="keywords" content="书法体验课,预约练字,免费试听">
-    <meta name="description" content="预约朝夕学堂98元新客专属体验课，含书写测评+个性化练字方案">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2D2926',
-                        red: '#A63C24',
-                        paper: '#F8F5F0',
-                        text: '#333333',
-                        light: '#666666',
-                    },
-                    fontFamily: {
-                        sans: ['PingFang SC', 'Microsoft YaHei', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>预约体验 - 朝夕学堂</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#2D2926',
+        red: '#A63C24',
+        paper: '#F8F5F0',
+        text: '#333333',
+        light: '#666666'
+      }
+    }
+  }
+}
+</script>
 </head>
-<body class="bg-paper text-text font-sans">
-    <!-- 导航栏 -->
-    <header class="fixed w-full top-0 z-50 bg-ink/95 text-white">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-white">朝夕学堂</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="index.html" class="hover:text-red transition-colors">首页</a>
-                <a href="about.html" class="hover:text-red transition-colors">关于我们</a>
-                <a href="courses.html" class="hover:text-red transition-colors">课程体系</a>
-                <a href="price.html" class="hover:text-red transition-colors">收费标准</a>
-                <a href="works.html" class="hover:text-red transition-colors">教学成果</a>
-                <a href="booking.html" class="hover:text-red transition-colors">预约体验</a>
-                <a href="contact.html" class="hover:text-red transition-colors">联系我们</a>
-            </nav>
-            <button id="menuBtn" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
-        </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-ink w-full">
-            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
-                <a href="index.html" class="py-2 hover:text-red transition-colors">首页</a>
-                <a href="about.html" class="py-2 hover:text-red transition-colors">关于我们</a>
-                <a href="courses.html" class="py-2 hover:text-red transition-colors">课程体系</a>
-                <a href="price.html" class="py-2 hover:text-red transition-colors">收费标准</a>
-                <a href="works.html" class="py-2 hover:text-red transition-colors">教学成果</a>
-                <a href="booking.html" class="py-2 hover:text-red transition-colors">预约体验</a>
-                <a href="contact.html" class="py-2 hover:text-red transition-colors">联系我们</a>
-            </div>
-        </div>
-    </header>
+<body class="bg-paper text-text">
 
-    <!-- 页面内容 -->
-    <section class="pt-24 md:pt-32 pb-16 bg-ink text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                <div class="w-full md:w-1/2">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">预约98元新客专属体验课</h1>
-                    <p class="text-xl text-gray-200 mb-8">先试再报，满意再缴费，无任何套路</p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-red text-xl mt-1"></i>
-                            <p class="text-lg">90分钟6人精品小班正式课堂</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-red text-xl mt-1"></i>
-                            <p class="text-lg">孩子专属书写习惯全面测评</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-red text-xl mt-1"></i>
-                            <p class="text-lg">个性化练字成长方案定制</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-red text-xl mt-1"></i>
-                            <p class="text-lg">课堂笔墨纸张耗材全包，无额外收费</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 text-lg">提交后1个工作日内，老师会与您联系确认具体上课时间</p>
-                </div>
-                <div class="w-full md:w-1/2 bg-white rounded-lg p-8 shadow-lg">
-                    <!-- 替换：去Formspree注册，替换下面的action地址 -->
-                    <form action="https://formspree.io/f/XXXXXXX" method="POST" class="flex flex-col gap-6">
-                        <div>
-                            <label for="name" class="block text-ink font-bold mb-2">孩子姓名</label>
-                            <input type="text" id="name" name="孩子姓名" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red text-text">
-                        </div>
-                        <div>
-                            <label for="age" class="block text-ink font-bold mb-2">孩子年级/年龄</label>
-                            <input type="text" id="age" name="孩子年级" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red text-text">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-ink font-bold mb-2">家长联系电话</label>
-                            <input type="tel" id="phone" name="联系电话" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red text-text">
-                        </div>
-                        <div>
-                            <label for="time" class="block text-ink font-bold mb-2">意向预约时间</label>
-                            <select id="time" name="预约时间" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red text-text">
-                                <option value="">请选择</option>
-                                <option value="周末上午">周末上午</option>
-                                <option value="周末下午">周末下午</option>
-                                <option value="周中放学后">周中放学后</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="msg" class="block text-ink font-bold mb-2">补充留言（选填）</label>
-                            <textarea id="msg" name="留言" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red text-text"></textarea>
-                        </div>
-                        <button type="submit" class="bg-red hover:bg-red/90 text-white text-lg font-bold py-3 px-8 rounded-lg transition-colors w-full">
-                            立即提交预约
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<header class="fixed w-full top-0 z-50 bg-ink/95 text-white">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold">朝夕学堂</a>
+    <nav class="hidden md:flex space-x-8">
+      <a href="index.html" class="hover:text-red">首页</a>
+      <a href="about.html" class="hover:text-red">关于我们</a>
+      <a href="courses.html" class="hover:text-red">课程体系</a>
+      <a href="price.html" class="hover:text-red">收费标准</a>
+      <a href="works.html" class="hover:text-red">教学成果</a>
+      <a href="booking.html" class="text-red">预约体验</a>
+      <a href="contact.html" class="hover:text-red">联系我们</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- 页脚 -->
-    <footer class="bg-ink text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="font-bold text-xl mb-2">朝夕学堂</p>
-                    <p class="text-gray-400">© 2024 版权所有</p>
-                </div>
-                <div class="flex space-x-6 text-xl">
-                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-weixin"></i></a>
-                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-douyin"></i></a>
-                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-kuaishou"></i></a>
-                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-xiaohongshu"></i></a>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
-                <p>地址：上海市浦东新区远东大厦（第一八佰伴旁） | 咨询电话：15300542701</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- 悬浮按钮 -->
-    <div class="fixed bottom-0 left-0 w-full md:hidden bg-ink text-white py-3 z-40">
-        <div class="grid grid-cols-2 gap-2 px-4">
-            <a href="tel:15300542701" class="bg-red hover:bg-red/90 text-white font-bold py-2 rounded-lg text-center">
-                <i class="fas fa-phone mr-1"></i> 一键拨打
-            </a>
-            <a href="booking.html" class="border border-white hover:bg-white/10 text-white font-bold py-2 rounded-lg text-center">
-                预约体验
-            </a>
-        </div>
+<section class="pt-28 pb-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold text-ink mb-2">预约体验课</h1>
+      <p class="text-light">专业书法老师一对一体检，免费测评书写问题</p>
     </div>
 
-    <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        const menuLinks = mobileMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow">
+      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+        <input type="hidden" name="access_key" value="99382b52-1fca-43df-af44-636490f40a7f">
+        <input type="hidden" name="subject" value="【朝夕学堂】新体验课预约">
+        <input type="hidden" name="redirect" value="https://你的用户名.github.io/thankyou.html">
+
+        <div>
+          <label class="block font-medium mb-1">孩子姓名</label>
+          <input type="text" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red focus:outline-none" required>
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1">年级/年龄</label>
+          <input type="text" name="grade" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red focus:outline-none" required>
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1">家长联系电话</label>
+          <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red focus:outline-none" required>
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1">意向体验时间</label>
+          <select name="time" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red focus:outline-none" required>
+            <option value="">请选择</option>
+            <option>周末上午</option>
+            <option>周末下午</option>
+            <option>周中放学后</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1">孩子书写问题（选填）</label>
+          <textarea name="message" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red focus:outline-none" placeholder="如：坐姿、握笔、结构、潦草、慢、没耐心等"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-red hover:bg-red/90 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+          提交预约 · 免费体验
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ink text-white py-6">
+  <div class="container mx-auto px-4 text-center text-sm">
+    <p>© 2026 朝夕学堂 版权所有</p>
+    <p>地址：上海市浦东新区远东大厦（第一八佰伴旁）｜电话：15300542701</p>
+  </div>
+</footer>
+
 </body>
 </html>
