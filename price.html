@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收费标准 - 朝夕学堂</title>
+    <meta name="keywords" content="书法班收费,练字班价格,书法培训费用">
+    <meta name="description" content="朝夕学堂收费公开透明，无隐形消费，6人精品小班160元/节起">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2D2926',
+                        red: '#A63C24',
+                        paper: '#F8F5F0',
+                        text: '#333333',
+                        light: '#666666',
+                    },
+                    fontFamily: {
+                        sans: ['PingFang SC', 'Microsoft YaHei', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper text-text font-sans">
+    <!-- 导航栏 -->
+    <header class="fixed w-full top-0 z-50 bg-ink/95 text-white">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">朝夕学堂</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-red transition-colors">首页</a>
+                <a href="about.html" class="hover:text-red transition-colors">关于我们</a>
+                <a href="courses.html" class="hover:text-red transition-colors">课程体系</a>
+                <a href="price.html" class="hover:text-red transition-colors">收费标准</a>
+                <a href="works.html" class="hover:text-red transition-colors">教学成果</a>
+                <a href="booking.html" class="hover:text-red transition-colors">预约体验</a>
+                <a href="contact.html" class="hover:text-red transition-colors">联系我们</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-ink w-full">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 hover:text-red transition-colors">首页</a>
+                <a href="about.html" class="py-2 hover:text-red transition-colors">关于我们</a>
+                <a href="courses.html" class="py-2 hover:text-red transition-colors">课程体系</a>
+                <a href="price.html" class="py-2 hover:text-red transition-colors">收费标准</a>
+                <a href="works.html" class="py-2 hover:text-red transition-colors">教学成果</a>
+                <a href="booking.html" class="py-2 hover:text-red transition-colors">预约体验</a>
+                <a href="contact.html" class="py-2 hover:text-red transition-colors">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面内容 -->
+    <section class="pt-24 md:pt-32 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-ink mb-4">公开透明收费标准</h1>
+            <p class="text-center text-light mb-12 text-lg">无隐形消费 · 无套路 · 全程透明</p>
+            
+            <!-- 价格表 -->
+            <div class="overflow-x-auto mb-16">
+                <table class="w-full bg-paper rounded-lg shadow-md">
+                    <thead>
+                        <tr class="bg-ink text-white">
+                            <th class="py-4 px-6 text-left">课程套餐</th>
+                            <th class="py-4 px-6 text-center">定价</th>
+                            <th class="py-4 px-6 text-center">折合单节价格</th>
+                            <th class="py-4 px-6 text-left">备注说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6 font-bold">新客体验课</td>
+                            <td class="py-4 px-6 text-center text-red font-bold text-xl">98元/节</td>
+                            <td class="py-4 px-6 text-center">98元/节</td>
+                            <td class="py-4 px-6 text-light">限新客1次，含90分钟课堂+书写测评+练字方案，耗材全包</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-white">
+                            <td class="py-4 px-6 font-bold">单级系统课（30节）</td>
+                            <td class="py-4 px-6 text-center font-bold">4680元</td>
+                            <td class="py-4 px-6 text-center">156元/节</td>
+                            <td class="py-4 px-6 text-light">启蒙/初级/中级/高级，4个级别任选</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 px-6 font-bold">两级连报（60节）</td>
+                            <td class="py-4 px-6 text-center font-bold">8800元</td>
+                            <td class="py-4 px-6 text-center">147元/节</td>
+                            <td class="py-4 px-6 text-light">立减560元，锁定1.5年学习周期</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-white">
+                            <td class="py-4 px-6 font-bold">四级连报（120节）</td>
+                            <td class="py-4 px-6 text-center font-bold">16200元</td>
+                            <td class="py-4 px-6 text-center">135元/节</td>
+                            <td class="py-4 px-6 text-light">立减3000元，覆盖小学全周期成长</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-bold">一对一私教课（30节）</td>
+                            <td class="py-4 px-6 text-center font-bold">5800元</td>
+                            <td class="py-4 px-6 text-center">193元/节</td>
+                            <td class="py-4 px-6 text-light">专属定制教学方案，时间灵活可调</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 郑重承诺 -->
+            <h2 class="text-3xl font-bold text-center text-ink mb-8">郑重承诺</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-check-circle text-red text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-ink mb-2">耗材全包</h3>
+                    <p class="text-light">所有课堂笔墨纸张全部包含，无任何二次收费</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-check-circle text-red text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-ink mb-2">课时永久有效</h3>
+                    <p class="text-light">无有效期限制，可请假、可补课，不用担心课时浪费</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-check-circle text-red text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-ink mb-2">退费无门槛</h3>
+                    <p class="text-light">未上课程按实付单价全额退费，无违约金，写进报名合同</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-check-circle text-red text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-ink mb-2">小班不超员</h3>
+                    <p class="text-light">严格6人封顶，绝不临时加位，保证教学质量</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-ink text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="font-bold text-xl mb-2">朝夕学堂</p>
+                    <p class="text-gray-400">© 2024 版权所有</p>
+                </div>
+                <div class="flex space-x-6 text-xl">
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-douyin"></i></a>
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-kuaishou"></i></a>
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-xiaohongshu"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>地址：上海市浦东新区远东大厦（第一八佰伴旁） | 咨询电话：15300542701</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 悬浮按钮 -->
+    <div class="fixed bottom-0 left-0 w-full md:hidden bg-ink text-white py-3 z-40">
+        <div class="grid grid-cols-2 gap-2 px-4">
+            <a href="tel:15300542701" class="bg-red hover:bg-red/90 text-white font-bold py-2 rounded-lg text-center">
+                <i class="fas fa-phone mr-1"></i> 一键拨打
+            </a>
+            <a href="booking.html" class="border border-white hover:bg-white/10 text-white font-bold py-2 rounded-lg text-center">
+                预约体验
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学成果 - 朝夕学堂</title>
+    <meta name="keywords" content="学员作品,书法考级,书写进步">
+    <meta name="description" content="朝夕学堂真实教学成果展示，学员书写前后对比、作品展示、考级证书">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2D2926',
+                        red: '#A63C24',
+                        paper: '#F8F5F0',
+                        text: '#333333',
+                        light: '#666666',
+                    },
+                    fontFamily: {
+                        sans: ['PingFang SC', 'Microsoft YaHei', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper text-text font-sans">
+    <!-- 导航栏 -->
+    <header class="fixed w-full top-0 z-50 bg-ink/95 text-white">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">朝夕学堂</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-red transition-colors">首页</a>
+                <a href="about.html" class="hover:text-red transition-colors">关于我们</a>
+                <a href="courses.html" class="hover:text-red transition-colors">课程体系</a>
+                <a href="price.html" class="hover:text-red transition-colors">收费标准</a>
+                <a href="works.html" class="hover:text-red transition-colors">教学成果</a>
+                <a href="booking.html" class="hover:text-red transition-colors">预约体验</a>
+                <a href="contact.html" class="hover:text-red transition-colors">联系我们</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-ink w-full">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 hover:text-red transition-colors">首页</a>
+                <a href="about.html" class="py-2 hover:text-red transition-colors">关于我们</a>
+                <a href="courses.html" class="py-2 hover:text-red transition-colors">课程体系</a>
+                <a href="price.html" class="py-2 hover:text-red transition-colors">收费标准</a>
+                <a href="works.html" class="py-2 hover:text-red transition-colors">教学成果</a>
+                <a href="booking.html" class="py-2 hover:text-red transition-colors">预约体验</a>
+                <a href="contact.html" class="py-2 hover:text-red transition-colors">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面内容 -->
+    <section class="pt-24 md:pt-32 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-ink mb-4">真实教学成果</h1>
+            <p class="text-center text-light mb-12 text-lg">每一份作品，每一次进步，都是我们的教学初心</p>
+            
+            <!-- 前后对比 -->
+            <h2 class="text-3xl font-bold text-ink mb-8">书写前后对比</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-paper rounded-lg overflow-hidden shadow-md">
+                    <img src="./assets/images/compare-1.jpg" alt="学生书写前后对比" class="w-full h-auto">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-ink">一年级学员 | 学习1个月</p>
+                        <p class="text-light">握笔纠正+卷面明显提升</p>
+                    </div>
+                </div>
+                <div class="bg-paper rounded-lg overflow-hidden shadow-md">
+                    <img src="./assets/images/compare-2.jpg" alt="学生书写前后对比" class="w-full h-auto">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-ink">二年级学员 | 学习30节课</p>
+                        <p class="text-light">结构规范+卷面分提升</p>
+                    </div>
+                </div>
+                <div class="bg-paper rounded-lg overflow-hidden shadow-md">
+                    <img src="./assets/images/compare-3.jpg" alt="学生书写前后对比" class="w-full h-auto">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-ink">三年级学员 | 学习2个月</p>
+                        <p class="text-light">顺利通过写字等级考</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 作品展示 -->
+            <h2 class="text-3xl font-bold text-ink mb-8">学员作品展示</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-1.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-2.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-3.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-4.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-5.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-6.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-7.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+                <div class="rounded overflow-hidden shadow-sm">
+                    <img src="./assets/images/work-8.jpg" alt="学员作品" class="w-full h-auto">
+                </div>
+            </div>
+
+            <!-- 考级荣誉 -->
+            <h2 class="text-3xl font-bold text-ink mb-8">学员成长见证</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <div class="w-20 h-20 bg-red text-white rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink mb-2">写字等级考</h3>
+                    <p class="text-light">学员通过率100%，优秀率超80%</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <div class="w-20 h-20 bg-red text-white rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink mb-2">书法考级</h3>
+                    <p class="text-light">全国书画考级3-5级，全员通过</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md text-center">
+                    <div class="w-20 h-20 bg-red text-white rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ink mb-2">书法赛事</h3>
+                    <p class="text-light">市区级书法赛事，多次获奖</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-ink text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="font-bold text-xl mb-2">朝夕学堂</p>
+                    <p class="text-gray-400">© 2024 版权所有</p>
+                </div>
+                <div class="flex space-x-6 text-xl">
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-douyin"></i></a>
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-kuaishou"></i></a>
+                    <a href="#" class="hover:text-red transition-colors"><i class="fab fa-xiaohongshu"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>地址：上海市浦东新区远东大厦（第一八佰伴旁） | 咨询电话：15300542701</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 悬浮按钮 -->
+    <div class="fixed bottom-0 left-0 w-full md:hidden bg-ink text-white py-3 z-40">
+        <div class="grid grid-cols-2 gap-2 px-4">
+            <a href="tel:15300542701" class="bg-red hover:bg-red/90 text-white font-bold py-2 rounded-lg text-center">
+                <i class="fas fa-phone mr-1"></i> 一键拨打
+            </a>
+            <a href="booking.html" class="border border-white hover:bg-white/10 text-white font-bold py-2 rounded-lg text-center">
+                预约体验
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
