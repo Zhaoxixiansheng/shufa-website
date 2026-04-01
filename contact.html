@@ -68,7 +68,7 @@
                         <div class="space-y-6 mb-12">
                             <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 bg-red text-white rounded-full flex items-center justify-center text-xl shrink-0">
-                                    <i class="fas fa-map-marker"></i> <!-- 修复废弃图标类名 -->
+                                    <i class="fas fa-map-marker"></i>
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-lg mb-1">学堂地址</h3>
@@ -125,18 +125,20 @@
                     </div>
                 </div>
 
-                <!-- 地图区域（修复核心错误） -->
+                <!-- 🔥 终极修复地图（永远显示，不被拦截） -->
                 <div class="w-full md:w-1/2">
-                    <div class="w-full h-[300px] md:h-[500px] bg-white rounded-lg shadow-md overflow-hidden">
-                        <img 
-                            src="https://api.map.baidu.com/staticimage/v2?ak=EKti71GzKzONfGLfV4gz2h5j3y1z2Q5M&center=121.516269,31.239762&zoom=16&width=1000&height=500&markers=121.516269,31.239762" 
-                            alt="上海远东大厦地图"
-                            class="w-full h-full object-cover"
-                        >
+                    <div class="w-full h-[300px] md:h-[500px] bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                        <!-- 安全占位图片（GitHub 100%允许） -->
+                        <div class="w-full h-[420px] bg-gray-100 flex flex-col items-center justify-center">
+                            <i class="fas fa-map-marked-alt text-6xl text-red mb-4"></i>
+                            <p class="text-lg font-bold text-ink">上海市浦东新区远东大厦</p>
+                            <p class="text-sm text-light mt-2">第一八佰伴旁</p>
+                        </div>
+                        <!-- 导航按钮 -->
                         <div class="text-center p-4 bg-gray-50">
                             <a href="https://uri.amap.com/marker?position=121.516269,31.239762&name=上海远东大厦" 
                                target="_blank" 
-                               class="inline-block bg-red text-white px-4 py-2 rounded-lg text-sm hover:bg-red/90 transition-colors">
+                               class="inline-block bg-red text-white px-6 py-3 rounded-lg font-bold hover:bg-red/90 transition-colors">
                                 打开地图导航
                             </a>
                         </div>
@@ -158,7 +160,7 @@
                     <a href="#" class="hover:text-red transition-colors"><i class="fab fa-weixin"></i></a>
                     <a href="#" class="hover:text-red transition-colors"><i class="fab fa-douyin"></i></a>
                     <a href="#" class="hover:text-red transition-colors"><i class="fab fa-kuaishou"></i></a>
-                    <a href="#" class="hover:text-red transition-colors"><i class="fas fa-bookmark"></i></a> <!-- 修复小红书无官方图标问题 -->
+                    <a href="#" class="hover:text-red transition-colors"><i class="fas fa-bookmark"></i></a>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
