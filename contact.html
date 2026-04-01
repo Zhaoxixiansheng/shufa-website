@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 朝夕学堂</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-section { padding: 60px 0; background: #f9f9f9; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .contact-card h3 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+        .map-container {
+            margin-top: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>朝夕学堂</h1></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="courses.html">课程介绍</a></li>
+                <li><a href="works.html">学员作品</a></li>
+                <li><a href="teacher.html">师资力量</a></li>
+                <li><a href="enroll.html">在线报名</a></li>
+                <li><a href="booking.html">课程预约</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>电话咨询</h3>
+                    <div class="contact-info">
+                        <p>报名热线：138-xxxx-xxxx</p>
+                        <p>咨询电话：0xxx-xxxxxxxx</p>
+                        <p>工作时间：9:00-18:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>微信咨询</h3>
+                    <div class="contact-info">
+                        <p>微信号：zhaoxixiansheng</p>
+                        <p>扫码添加好友</p>
+                        <p>在线解答疑问</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>到校参观</h3>
+                    <div class="contact-info">
+                        <p>地址：xxx 市 xxx 区 xxx 路</p>
+                        <p>欢迎预约参观</p>
+                        <p>免费试听课程</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <h3 style="text-align: center; color: #8B4513; margin-bottom: 1rem;">学校位置</h3>
+                <div style="background: #eee; height: 400px; display: flex; align-items: center; justify-content: center; color: #999;">
+                    <p>地图位置（可替换为百度地图/高德地图嵌入代码）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 朝夕学堂 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

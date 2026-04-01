@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学员作品 - 朝夕学堂</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .works-section { padding: 60px 0; }
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .filter-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 2px solid #8B4513;
+            background: white;
+            color: #8B4513;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #8B4513;
+            color: white;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 2rem;
+        }
+        .gallery-item .work-showcase {
+            font-size: 6rem;
+            color: #8B4513;
+            font-family: 'KaiTi', serif;
+            margin-bottom: 1rem;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-item h4 {
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+        }
+        .gallery-item p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .gallery-item span {
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>朝夕学堂</h1></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="courses.html">课程介绍</a></li>
+                <li><a href="works.html" class="active">学员作品</a></li>
+                <li><a href="teacher.html">师资力量</a></li>
+                <li><a href="enroll.html">在线报名</a></li>
+                <li><a href="booking.html">课程预约</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="works-section">
+        <div class="container">
+            <h2 class="section-title">学员作品展示</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterWorks('all')">全部</button>
+                <button class="filter-btn" onclick="filterWorks('kai')">楷书</button>
+                <button class="filter-btn" onclick="filterWorks('xing')">行书</button>
+                <button class="filter-btn" onclick="filterWorks('li')">隶书</button>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item" data-type="kai">
+                    <div class="work-showcase">福</div>
+                    <h4>《福字》</h4>
+                    <p>学员：张三</p>
+                    <span>楷书 · 学习 3 个月</span>
+                </div>
+                <div class="gallery-item" data-type="kai">
+                    <div class="work-showcase">寿</div>
+                    <h4>《寿字》</h4>
+                    <p>学员：李四</p>
+                    <span>楷书 · 学习 6 个月</span>
+                </div>
+                <div class="gallery-item" data-type="xing">
+                    <div class="work-showcase">道</div>
+                    <h4>《道》</h4>
+                    <p>学员：王五</p>
+                    <span>行书 · 学习 1 年</span>
+                </div>
+                <div class="gallery-item" data-type="li">
+                    <div class="work-showcase">静</div>
+                    <h4>《静》</h4>
+                    <p>学员：赵六</p>
+                    <span>隶书 · 学习 8 个月</span>
+                </div>
+                <div class="gallery-item" data-type="kai">
+                    <div class="work-showcase">永</div>
+                    <h4>《永字八法》</h4>
+                    <p>学员：孙七</p>
+                    <span>楷书 · 学习 4 个月</span>
+                </div>
+                <div class="gallery-item" data-type="xing">
+                    <div class="work-showcase">龙</div>
+                    <h4>《龙》</h4>
+                    <p>学员：周八</p>
+                    <span>行书 · 学习 1 年半</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 朝夕学堂 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function filterWorks(type) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            items.forEach(item => {
+                if (type === 'all' || item.dataset.type === type) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
