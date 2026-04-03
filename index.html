@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝夕学堂 - 专业书法培训</title>
+    <title>朝夕学堂 | 上海八佰伴书法班 | 浦东少儿练字培训</title>
+    <meta name="keywords" content="上海八佰伴书法班,浦东少儿练字,小学生硬笔书法,软笔书法培训,写字等级考辅导">
+    <meta name="description" content="朝夕学堂位于上海浦东八佰伴旁远东大厦，专注6人精品书法小班，4阶系统教学，涵盖硬笔/软笔/卷面提分/写字等级考，咨询电话：15300542701">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -24,10 +26,15 @@
             }
         }
     </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        }
+    </style>
 </head>
 <body class="bg-paper text-text font-sans">
-
-    <!-- 导航栏 -->
+    <!-- 顶部导航栏 -->
     <header class="fixed w-full top-0 z-50 bg-ink/95 text-white">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-white">朝夕学堂</a>
@@ -55,134 +62,139 @@
         </div>
     </header>
 
-    <!-- 首屏Banner图片部分（图片已缩小） -->
+    <!-- 首屏Banner -->
     <section class="pt-24 md:pt-32 pb-16 md:pb-24 bg-ink text-white">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-between gap-8">
                 <div class="w-full md:w-1/2">
-                    <!-- 原有标题/按钮等内容不变 -->
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow">
+                        朝夕学堂<br>专业精品小班书法
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                        严格6人封顶 · 4阶完整成长体系 · 90分钟精讲细改 · 拒绝大班流水线
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="booking.html" class="bg-red hover:bg-red/90 text-white text-lg font-bold py-3 px-8 rounded-lg text-center transition-colors">
+                            立即预约98元体验课
+                        </a>
+                        <a href="tel:15300542701" class="border-2 border-white hover:bg-white/10 text-white text-lg font-bold py-3 px-8 rounded-lg text-center transition-colors">
+                            <i class="fas fa-phone mr-2"></i>15300542701
+                        </a>
+                    </div>
+                    <p class="mt-6 text-gray-300">上海市浦东新区远东大厦（第一八佰伴旁）</p>
                 </div>
-                <div class="w-full md:w-1/2 flex justify-center">
-                    <!-- 图片已缩小 -->
-                    <img src="./assets/images/朝夕logo彩色透明底带R标.png" alt="朝夕学堂logo" class="max-w-[50%] md:max-w-[45%] h-auto rounded-lg shadow-lg">
+                <div class="w-full md:w-1/2">
+                    <!-- 替换：首屏背景图 -->
+                    <img src="./assets/images/朝夕学堂横版黑字透明底.png" alt="朝夕学堂logo" class="w-full h-auto rounded-lg shadow-lg">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 页面主体内容 -->
+    <!-- 3大核心优势 -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-bold text-center text-ink mb-4">4阶完整书法成长体系</h1>
-            <p class="text-center text-light mb-12 text-lg">每级30节系统课，分级进阶，精准匹配孩子的书写成长节奏</p>
-            
-            <!-- 启蒙级 -->
-            <div class="mb-16 border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-ink text-white p-6">
-                    <h2 class="text-2xl md:text-3xl font-bold">启蒙级 · 书写入门班（30节）</h2>
-                    <p class="text-gray-200 text-lg mt-2">适合：幼儿园大班-小学1年级 · 零基础</p>
-                </div>
-                <div class="p-8">
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="w-full md:w-full">
-                            <h3 class="text-xl font-bold text-ink mb-4">核心教学目标</h3>
-                            <p class="text-light mb-6 text-lg">30节课彻底纠正错误握笔与坐姿，掌握8大基本笔画与控笔能力，规范书写100个小学常用独体字，养成良好的书写习惯</p>
-                            <h3 class="text-xl font-bold text-ink mb-4">30节课拆分逻辑</h3>
-                            <ul class="list-disc list-inside text-light mb-6 space-y-2">
-                                <li>1-10节：握笔坐姿专项纠正+控笔基础训练+8大基本笔画精讲</li>
-                                <li>11-20节：24个常用偏旁部首+独体字结构规律+逐字过关训练</li>
-                                <li>21-30节：常用生字规范书写+短句书写+卷面基础规范+结业测评</li>
-                            </ul>
-                            <h3 class="text-xl font-bold text-ink mb-4">结业成果</h3>
-                            <p class="text-light text-lg">掌握正确的握笔坐姿，独立规范书写一年级课内生字，作业卷面整洁，获得朝夕学堂启蒙级结业证书</p>
-                        </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-ink mb-12">我们的核心优势</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-paper p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-red text-white rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fas fa-users"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-center text-ink mb-4">6人小班 逐字精改</h3>
+                    <p class="text-light">严格6人封顶不扩班，全程主讲老师一对一批改，每个孩子的坐姿、握笔、字形都能盯到位，拒绝10人以上大班放羊式教学</p>
                 </div>
-            </div>
-
-            <!-- 初级 -->
-            <div class="mb-16 border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-ink text-white p-6">
-                    <h2 class="text-2xl md:text-3xl font-bold">初级 · 卷面提分班（30节）</h2>
-                    <p class="text-gray-200 text-lg mt-2">适合：小学1-3年级 · 有启蒙基础</p>
-                </div>
-                <div class="p-8">
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="w-full md:w-full">
-                            <h3 class="text-xl font-bold text-ink mb-4">核心教学目标</h3>
-                            <p class="text-light mb-6 text-lg">30节课掌握汉字间架结构规律，规范书写常用合体字，掌握作业/考试卷面排版技巧，直接对接上海校内写字等级考</p>
-                            <h3 class="text-xl font-bold text-ink mb-4">30节课拆分逻辑</h3>
-                            <ul class="list-disc list-inside text-light mb-6 space-y-2">
-                                <li>1-10节：左右/上下结构规律精讲+课内高频易错字专项纠正</li>
-                                <li>11-20节：包围结构规律+段落书写+作业卷面排版专项训练</li>
-                                <li>21-30节：应试书写提速+完整卷面训练+写字等级考模拟+结业测评</li>
-                            </ul>
-                            <h3 class="text-xl font-bold text-ink mb-4">结业成果</h3>
-                            <p class="text-light text-lg">作业卷面工整清晰，书写速度达标，顺利通过上海校内写字等级考，获得朝夕学堂初级结业证书</p>
-                        </div>
+                <div class="bg-paper p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-red text-white rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-center text-ink mb-4">4阶体系 系统成长</h3>
+                    <p class="text-light">启蒙→初级→中级→高级完整进阶路径，每级30节系统课，从零基础握笔纠正到书法特长考级，一套体系覆盖小学全周期，不用频繁换机构</p>
                 </div>
-            </div>
-
-            <!-- 中级 -->
-            <div class="mb-16 border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-ink text-white p-6">
-                    <h2 class="text-2xl md:text-3xl font-bold">中级 · 进阶考级班（30节）</h2>
-                    <p class="text-gray-200 text-lg mt-2">适合：小学3-4年级 · 有初级基础</p>
-                </div>
-                <div class="p-8">
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="w-full md:w-full">
-                            <h3 class="text-xl font-bold text-ink mb-4">核心教学目标</h3>
-                            <p class="text-light mb-6 text-lg">30节课完成硬笔书法创作进阶，软笔书法基础入门，针对性训练全国书画考级3-5级内容，完成从「规范写字」到「书法特长」的跨越</p>
-                            <h3 class="text-xl font-bold text-ink mb-4">30节课拆分逻辑</h3>
-                            <ul class="list-disc list-inside text-light mb-6 space-y-2">
-                                <li>1-10节：硬笔作品章法精讲+古诗/短文完整作品创作+考级内容对接</li>
-                                <li>11-20节：软笔楷书基础（笔法、偏旁、结构）+经典碑帖临摹入门</li>
-                                <li>21-30节：书法考级专项模拟+软硬笔作品创作+结业测评</li>
-                            </ul>
-                            <h3 class="text-xl font-bold text-ink mb-4">结业成果</h3>
-                            <p class="text-light text-lg">独立完成硬笔书法作品，掌握软笔楷书基础，顺利通过全国书画考级3-5级，获得朝夕学堂中级结业证书</p>
-                        </div>
+                <div class="bg-paper p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-red text-white rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fas fa-hand-holding-heart"></i>
                     </div>
-                </div>
-            </div>
-
-            <!-- 高级 -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-ink text-white p-6">
-                    <h2 class="text-2xl md:text-3xl font-bold">高级 · 特长创作班（30节）</h2>
-                    <p class="text-gray-200 text-lg mt-2">适合：小学4-6年级 · 有中级基础</p>
-                </div>
-                <div class="p-8">
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="w-full md:w-full">
-                            <h3 class="text-xl font-bold text-ink mb-4">核心教学目标</h3>
-                            <p class="text-light mb-6 text-lg">30节课掌握硬笔行书应试快写，软笔楷书进阶/隶书入门，完成市区级书法赛事专项训练，打造完整的书法特长成长闭环</p>
-                            <h3 class="text-xl font-bold text-ink mb-4">30节课拆分逻辑</h3>
-                            <ul class="list-disc list-inside text-light mb-6 space-y-2">
-                                <li>1-10节：硬笔行书基础+应试快写训练，对接初中书写需求</li>
-                                <li>11-20节：软笔书法进阶+经典碑帖深度临摹+完整作品创作</li>
-                                <li>21-30节：书法赛事专项训练+结业作品展+小升初特长规划</li>
-                            </ul>
-                            <h3 class="text-xl font-bold text-ink mb-4">结业成果</h3>
-                            <p class="text-light text-lg">独立完成软硬笔专业书法作品，在市区级书法赛事中获奖，完成小升初书法特长储备，获得朝夕学堂高级结业证书</p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold text-center text-ink mb-4">透明收费 无隐形消费</h3>
+                    <p class="text-light">所有课程含课堂笔墨纸张耗材，课时无有效期可请假补课，未上课程全额退费无违约金，不玩套路、不捆绑销售</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 页脚（版权已完美居中） -->
+    <!-- 课程速览 -->
+    <section class="py-16 bg-paper">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-ink mb-12">专为上海小学生打造的书法成长体系</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <h3 class="text-xl font-bold text-ink mb-2">启蒙级（30节）</h3>
+                    <p class="text-light mb-4">幼儿园大班-1年级</p>
+                    <p class="text-sm mb-4">握笔纠正+零基础入门</p>
+                    <a href="courses.html" class="text-red font-bold hover:underline">查看详情 →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <h3 class="text-xl font-bold text-ink mb-2">初级级（30节）</h3>
+                    <p class="text-light mb-4">1-3年级</p>
+                    <p class="text-sm mb-4">结构规范+卷面提分</p>
+                    <a href="courses.html" class="text-red font-bold hover:underline">查看详情 →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <h3 class="text-xl font-bold text-ink mb-2">中级级（30节）</h3>
+                    <p class="text-light mb-4">3-4年级</p>
+                    <p class="text-sm mb-4">软硬笔进阶+书法考级</p>
+                    <a href="courses.html" class="text-red font-bold hover:underline">查看详情 →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <h3 class="text-xl font-bold text-ink mb-2">高级级（30节）</h3>
+                    <p class="text-light mb-4">4-6年级</p>
+                    <p class="text-sm mb-4">作品创作+赛事特长</p>
+                    <a href="courses.html" class="text-red font-bold hover:underline">查看详情 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 家长反馈 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-ink mb-12">真实进步 家长看得见</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-paper p-6 rounded-lg shadow-md">
+                    <p class="text-light mb-4">“一年级孩子握笔一直错，大班课根本顾不过来，在朝夕学堂6人班，30节课就彻底纠正了，作业卷面工整太多了”</p>
+                    <p class="font-bold text-ink">— 一年级学员家长</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md">
+                    <p class="text-light mb-4">“老师特别负责，每节课都给孩子逐字批改，还有课后反馈，孩子写字进步特别明显，顺利通过了写字等级考”</p>
+                    <p class="font-bold text-ink">— 二年级学员家长</p>
+                </div>
+                <div class="bg-paper p-6 rounded-lg shadow-md">
+                    <p class="text-light mb-4">“就在八佰伴旁边，接送特别方便，不搞大班流水线，孩子愿意学，也能真正学到东西，已经续报了中级班”</p>
+                    <p class="font-bold text-ink">— 三年级学员家长</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部CTA -->
+    <section class="py-16 bg-ink text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">98元抢新客专属体验课</h2>
+            <p class="text-xl text-gray-200 mb-8">含90分钟正式课堂+专属书写测评+个性化练字方案，耗材全包无额外收费</p>
+            <a href="booking.html" class="bg-red hover:bg-red/90 text-white text-lg font-bold py-3 px-8 rounded-lg inline-block transition-colors">
+                立即预约体验
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
     <footer class="bg-ink text-white py-8">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-center items-center text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <p class="font-bold text-xl mb-2">朝夕学堂</p>
                     <p class="text-gray-400">© 2024 版权所有</p>
                 </div>
-                <div class="flex space-x-6 text-xl mt-4 md:mt-0 md:ml-8">
+                <div class="flex space-x-6 text-xl">
                     <a href="#" class="hover:text-red transition-colors"><i class="fab fa-weixin"></i></a>
                     <a href="#" class="hover:text-red transition-colors"><i class="fab fa-douyin"></i></a>
                     <a href="#" class="hover:text-red transition-colors"><i class="fab fa-kuaishou"></i></a>
@@ -195,7 +207,7 @@
         </div>
     </footer>
 
-    <!-- 悬浮拨打按钮 -->
+    <!-- 悬浮按钮 -->
     <div class="fixed bottom-0 left-0 w-full md:hidden bg-ink text-white py-3 z-40">
         <div class="grid grid-cols-2 gap-2 px-4">
             <a href="tel:15300542701" class="bg-red hover:bg-red/90 text-white font-bold py-2 rounded-lg text-center">
